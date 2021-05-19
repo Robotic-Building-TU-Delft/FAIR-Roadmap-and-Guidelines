@@ -1,2 +1,2 @@
-# general-collaboration-notes
-This repo is needed to associate general notes and issues that are not specific to particular repositories.
+# FAIR support and collaboration notes
+This repo is mostly used to take notes on DCC support activities with the Robotic Building Lab.
