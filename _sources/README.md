@@ -1,5 +1,2 @@
-# Robotic building lab FAIR guidelines
-## Generating data and source code
-## Archiving data
-## General workflow
-
+# FAIR support and collaboration notes
+This repo is mostly used to take notes on DCC support activities with the Robotic Building Lab.
