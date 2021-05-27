@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FAIR support and collaboration notes &#8212; Robotic Building Lab Guides</title>
+    <title>FAIR principles for Lab collaborators &#8212; Robotic Building Lab Guides</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -85,7 +85,8 @@ commentsRunWhenDOMLoaded(addUtterances);
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="FAIR principles for Lab collaborators" href="0_2_FAIR_data.html" />
+    <link rel="next" title="FAIR support and collaboration notes" href="README.html" />
+    <link rel="prev" title="Introduction" href="0_1_Introduction.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -124,13 +125,13 @@ commentsRunWhenDOMLoaded(addUtterances);
    Introduction
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="0_2_FAIR_data.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    FAIR principles for Lab collaborators
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="README.html">
    FAIR support and collaboration notes
   </a>
  </li>
@@ -175,7 +176,7 @@ commentsRunWhenDOMLoaded(addUtterances);
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/README.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/0_2_FAIR_data.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -213,6 +214,70 @@ commentsRunWhenDOMLoaded(addUtterances);
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   FAIR principles for Lab collaborators
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#adopting-fair-in-your-workflow">
+     Adopting FAIR in your workflow
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#an-example-of-more-fair-documentation-practice-with-markdown">
+       An example of more FAIR documentation practice with Markdown
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#be-smart-and-practical-about-fair">
+       Be smart and practical about FAIR
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#fair-principles-in-more-detail-1">
+     FAIR principles in more detail[1]
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#findable">
+       Findable
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#accessible">
+       Accessible
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#interoperable">
+       Interoperable
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#reusable">
+       Reusable
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references">
+   References
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -221,9 +286,63 @@ commentsRunWhenDOMLoaded(addUtterances);
         
               <div>
                 
-  <div class="section" id="fair-support-and-collaboration-notes">
-<h1>FAIR support and collaboration notes<a class="headerlink" href="#fair-support-and-collaboration-notes" title="Permalink to this headline">¶</a></h1>
-<p>This repo is mostly used to take notes on DCC support activities with the Robotic Building Lab.</p>
+  <div class="section" id="fair-principles-for-lab-collaborators">
+<h1>FAIR principles for Lab collaborators<a class="headerlink" href="#fair-principles-for-lab-collaborators" title="Permalink to this headline">¶</a></h1>
+<p>FAIR stands for Findability, Accessibility, Interoperatbility and reusability of data. We try to articulate these principles in our domain so that our results are easier to reuse.</p>
+<div class="section" id="adopting-fair-in-your-workflow">
+<h2>Adopting FAIR in your workflow<a class="headerlink" href="#adopting-fair-in-your-workflow" title="Permalink to this headline">¶</a></h2>
+<p>We believe that the progressive adoption of standardized practices that work for us, like propper documentation, folder structuring, version control, use of metadata and so on,  improves our performance and practices in the lab. Workflows and best practices are heavily influenced by emerging technologies that empower us and allow us to be more productive. For instance the emergence of git and github tools to do code versionc control, as well as specific tools like speckle that can make our 3D models more interoperable, but also the filesystem in our computers.</p>
+<div class="section" id="an-example-of-more-fair-documentation-practice-with-markdown">
+<h3>An example of more FAIR documentation practice with Markdown<a class="headerlink" href="#an-example-of-more-fair-documentation-practice-with-markdown" title="Permalink to this headline">¶</a></h3>
+<p>Markdown is a good example of a format that makes documentation more reusable. Many text editors are interoperable with markdown, many static website generators are also compatible with Markdown from blogs to github. This allows to easily package your documentation and sharing it with others in many ways. In this context adopting Markdown will make the documents more Reusable because they are more interoperable (comaptible) with other applications and services, compared to pdf or a word documents.</p>
+</div>
+<div class="section" id="be-smart-and-practical-about-fair">
+<h3>Be smart and practical about FAIR<a class="headerlink" href="#be-smart-and-practical-about-fair" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Adopt first the easy practices</p></li>
+<li><p>Learn more complex tools on the way</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="fair-principles-in-more-detail-1">
+<h2>FAIR principles in more detail[1]<a class="headerlink" href="#fair-principles-in-more-detail-1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="findable">
+<h3>Findable<a class="headerlink" href="#findable" title="Permalink to this headline">¶</a></h3>
+<p>The first step in (re)using data is to find them. Metadata and data should be easy to find for both humans and computers. Machine-readable metadata are essential for automatic discovery of datasets and services, so this is an essential component of the FAIRification process.</p>
+<p>F1. (Meta)data are assigned a globally unique and persistent identifier</p>
+<p>F2. Data are described with rich metadata (defined by R1 below)</p>
+<p>F3. Metadata clearly and explicitly include the identifier of the data they describe</p>
+<p>F4. (Meta)data are registered or indexed in a searchable resource[2]</p>
+</div>
+<div class="section" id="accessible">
+<h3>Accessible<a class="headerlink" href="#accessible" title="Permalink to this headline">¶</a></h3>
+<p>Once the user finds the required data, they need to know how they can be accessed, possibly including authentication and authorisation.</p>
+<p>A1. (Meta)data are retrievable by their identifier using a standardised communications protocol</p>
+<p>A1.1 The protocol is open, free, and universally implementable</p>
+<p>A1.2 The protocol allows for an authentication and authorisation procedure, where necessary</p>
+<p>A2. Metadata are accessible, even when the data are no longer available[2]</p>
+</div>
+<div class="section" id="interoperable">
+<h3>Interoperable<a class="headerlink" href="#interoperable" title="Permalink to this headline">¶</a></h3>
+<p>The data usually need to be integrated with other data. In addition, the data need to interoperate with applications or workflows for analysis, storage, and processing.</p>
+<p>I1. (Meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation.</p>
+<p>I2. (Meta)data use vocabularies that follow FAIR principles</p>
+<p>I3. (Meta)data include qualified references to other (meta)data[2]</p>
+</div>
+<div class="section" id="reusable">
+<h3>Reusable<a class="headerlink" href="#reusable" title="Permalink to this headline">¶</a></h3>
+<p>The ultimate goal of FAIR is to optimise the reuse of data. To achieve this, metadata and data should be well-described so that they can be replicated and/or combined in different settings.</p>
+<p>R1. Meta(data) are richly described with a plurality of accurate and relevant attributes</p>
+<p>R1.1. (Meta)data are released with a clear and accessible data usage license</p>
+<p>R1.2. (Meta)data are associated with detailed provenance</p>
+<p>R1.3. (Meta)data meet domain-relevant community standards</p>
+<p>The principles refer to three types of entities: data (or any digital object), metadata (information about that digital object), and infrastructure. For instance, principle F4 defines that both metadata and data are registered or indexed in a searchable resource (the infrastructure component).</p>
+</div>
+</div>
+</div>
+<div class="section" id="references">
+<h1>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h1>
+<p>[1]“FAIR data,” Wikipedia. Apr. 12, 2021. Accessed: May 27, 2021. [Online]. Available: <a class="reference external" href="https://en.wikipedia.org/w/index.php?title=FAIR_data&amp;oldid=1017429099">https://en.wikipedia.org/w/index.php?title=FAIR_data&amp;oldid=1017429099</a></p>
 </div>
 
     <script type="text/x-thebe-config">
@@ -251,7 +370,8 @@ commentsRunWhenDOMLoaded(addUtterances);
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="0_2_FAIR_data.html" title="previous page">FAIR principles for Lab collaborators</a>
+    <a class='left-prev' id="prev-link" href="0_1_Introduction.html" title="previous page">Introduction</a>
+    <a class='right-next' id="next-link" href="README.html" title="next page">FAIR support and collaboration notes</a>
 
         </div>
         

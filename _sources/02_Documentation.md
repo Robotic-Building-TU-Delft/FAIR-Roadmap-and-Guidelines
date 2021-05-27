@@ -1,4 +1,4 @@
-# Structuring your project 
+# Structuring projects
 
 ## Structuring
 
