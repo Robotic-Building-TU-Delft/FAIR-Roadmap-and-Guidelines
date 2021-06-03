@@ -1,1 +1,8 @@
-file: README
+file: 02_Documentation
+sections:
+- file: 03_Version_control
+- file: 04_1_VC
+- file: 0_1_Introduction
+- file: 0_2_FAIR_data
+- file: LICENSE
+- file: README

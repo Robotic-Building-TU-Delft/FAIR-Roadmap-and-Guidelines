@@ -1,5 +1,5 @@
 # in _config.yml
-title: "Delft Open Hardware community website"
+title: "Robotic Building Lab Guides"
 logo: images/logo.png
 execute:
   execute_notebooks: "off"
