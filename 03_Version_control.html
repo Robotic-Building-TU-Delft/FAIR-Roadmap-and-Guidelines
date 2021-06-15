@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>&lt;no title&gt; &#8212; Robotic Building Lab Guides</title>
+    <title>Version control for D2P&amp;O &#8212; Robotic Building Lab Guides</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -85,7 +85,7 @@ commentsRunWhenDOMLoaded(addUtterances);
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Version control for large files like CAD models" href="04_1_VC.html" />
+    <link rel="next" title="FAIR support and collaboration notes" href="README.html" />
     <link rel="prev" title="Structuring projects" href="02_Documentation.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -114,20 +114,20 @@ commentsRunWhenDOMLoaded(addUtterances);
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
     <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="04_1_VC.html">
-   Version control for large files like CAD models
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="0_1_Introduction.html">
-   Introduction
-  </a>
- </li>
+        <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="0_2_FAIR_data.html">
    FAIR principles for Lab collaborators
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02_Documentation.html">
+   Structuring projects
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Version control for D2P&amp;O
   </a>
  </li>
  <li class="toctree-l1">
@@ -218,7 +218,29 @@ commentsRunWhenDOMLoaded(addUtterances);
                 <i class="fas fa-list"></i> Contents
             </div>
             <nav id="bd-toc-nav">
-                <ul class="simple visible nav section-nav flex-column">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#a-hybrid-approach">
+   A hybrid approach
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#options-to-deal-with-binary-files-and-large-files">
+     Options to deal with binary files and large files
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#learnings-and-recommendations">
+     Learnings and recommendations
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references">
+   References
+  </a>
+ </li>
 </ul>
 
             </nav>
@@ -230,7 +252,35 @@ commentsRunWhenDOMLoaded(addUtterances);
         
               <div>
                 
-  
+  <div class="section" id="version-control-for-d2p-o">
+<h1>Version control for D2P&amp;O<a class="headerlink" href="#version-control-for-d2p-o" title="Permalink to this headline">¶</a></h1>
+<p>Version control Design-to-Robotic-Production and -Operation projects</p>
+<div class="section" id="a-hybrid-approach">
+<h2>A hybrid approach<a class="headerlink" href="#a-hybrid-approach" title="Permalink to this headline">¶</a></h2>
+<p>Version control for software development can be done easily with git, meant to be used to do version control on source code, being the compiled binaries and executables an outcome from the source code that is not tracked by version control systems like git. However git has some limitations when it comes to version 3D models and visual programming scripts developed in software like Rhino, as these format are binary files, which are often also quite large.</p>
+<div class="section" id="options-to-deal-with-binary-files-and-large-files">
+<h3>Options to deal with binary files and large files<a class="headerlink" href="#options-to-deal-with-binary-files-and-large-files" title="Permalink to this headline">¶</a></h3>
+<p>So far we have explored the following options:</p>
+<ol class="simple">
+<li><p>Git LFS (Git Large File Storage)</p></li>
+<li><p>DVC (Data version control)</p></li>
+<li><p>Speckle</p></li>
+</ol>
+</div>
+<div class="section" id="learnings-and-recommendations">
+<h3>Learnings and recommendations<a class="headerlink" href="#learnings-and-recommendations" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Git LFS is the easiest solution to adopt and use for beginners.</p></li>
+<li><p>DVC is very powerful but requires more in depth knowledge of git and requires more infrastructural considerations. Git LFS is a more out of the box solution compared to DVC which is more flexible.</p></li>
+<li><p>Speckle is a great complement to do version control on 3D models.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
     <script type="text/x-thebe-config">
     {
         requestKernel: true,
@@ -257,7 +307,7 @@ commentsRunWhenDOMLoaded(addUtterances);
         <div class='prev-next-bottom'>
             
     <a class='left-prev' id="prev-link" href="02_Documentation.html" title="previous page">Structuring projects</a>
-    <a class='right-next' id="next-link" href="04_1_VC.html" title="next page">Version control for large files like CAD models</a>
+    <a class='right-next' id="next-link" href="README.html" title="next page">FAIR support and collaboration notes</a>
 
         </div>
         
@@ -269,7 +319,7 @@ commentsRunWhenDOMLoaded(addUtterances);
         
           By The Jupyter Book community<br/>
         
-            &copy; Copyright 2020.<br/>
+            &copy; Copyright 2021.<br/>
       </p>
     </div>
   </footer>
