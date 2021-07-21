@@ -1,2 +1,3 @@
-# FAIR support and collaboration notes
-This repo is mostly used to take notes on DCC support activities with the Robotic Building Lab.
+# DCC support for the Robotic Building lab at TU Delft
+A simple documentation repository using tiddly wiki to capture the learnings, recommendations and proposals for the RB group to improve their software and data management workflows.
+
